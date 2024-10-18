@@ -19,5 +19,4 @@ namespace LNBT
             Application.Run(new FrmDangNhap());
         }
     }
-} // cho thai
-
+}
