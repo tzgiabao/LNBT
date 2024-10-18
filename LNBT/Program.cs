@@ -18,6 +18,7 @@ namespace LNBT
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmDangNhap());
         }
+        //222
     }
 }
 
