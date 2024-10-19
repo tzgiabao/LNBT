@@ -92,6 +92,14 @@
             this.dtpkTuNgay = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabAdmin = new System.Windows.Forms.TabControl();
+            this.btnDau = new System.Windows.Forms.Button();
+            this.btnCuoi = new System.Windows.Forms.Button();
+            this.btnQuaTrang = new System.Windows.Forms.Button();
+            this.btnQuayLai = new System.Windows.Forms.Button();
+            this.txtSoTrang = new System.Windows.Forms.TextBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.lblTrangThai = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabTaiKhoan.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -120,6 +128,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhThu)).BeginInit();
             this.tabAdmin.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabTaiKhoan
@@ -384,7 +393,7 @@
             // panel12
             // 
             this.panel12.Controls.Add(this.dtgvDanhMuc);
-            this.panel12.Location = new System.Drawing.Point(6, 82);
+            this.panel12.Location = new System.Drawing.Point(5, 82);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(547, 454);
             this.panel12.TabIndex = 4;
@@ -404,7 +413,7 @@
             this.panel11.Controls.Add(this.btnSuaDanhMuc);
             this.panel11.Controls.Add(this.btnXoaDanhMuc);
             this.panel11.Controls.Add(this.btnThemDanhMuc);
-            this.panel11.Location = new System.Drawing.Point(6, 6);
+            this.panel11.Location = new System.Drawing.Point(5, 6);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(545, 70);
             this.panel11.TabIndex = 3;
@@ -562,6 +571,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.panel20);
             this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.panel9);
             this.panel4.Controls.Add(this.panel8);
@@ -707,6 +717,11 @@
             // 
             // tabDoanhThu
             // 
+            this.tabDoanhThu.Controls.Add(this.txtSoTrang);
+            this.tabDoanhThu.Controls.Add(this.btnQuayLai);
+            this.tabDoanhThu.Controls.Add(this.btnQuaTrang);
+            this.tabDoanhThu.Controls.Add(this.btnCuoi);
+            this.tabDoanhThu.Controls.Add(this.btnDau);
             this.tabDoanhThu.Controls.Add(this.btnThongKe);
             this.tabDoanhThu.Controls.Add(this.dtpkDenNgay);
             this.tabDoanhThu.Controls.Add(this.panel1);
@@ -784,6 +799,80 @@
             this.tabAdmin.TabIndex = 0;
             this.tabAdmin.SelectedIndexChanged += new System.EventHandler(this.tabAdmin_SelectedIndexChanged);
             // 
+            // btnDau
+            // 
+            this.btnDau.Location = new System.Drawing.Point(11, 503);
+            this.btnDau.Name = "btnDau";
+            this.btnDau.Size = new System.Drawing.Size(75, 33);
+            this.btnDau.TabIndex = 4;
+            this.btnDau.Text = "Đầu";
+            this.btnDau.UseVisualStyleBackColor = true;
+            // 
+            // btnCuoi
+            // 
+            this.btnCuoi.Location = new System.Drawing.Point(866, 503);
+            this.btnCuoi.Name = "btnCuoi";
+            this.btnCuoi.Size = new System.Drawing.Size(75, 33);
+            this.btnCuoi.TabIndex = 5;
+            this.btnCuoi.Text = "Cuối";
+            this.btnCuoi.UseVisualStyleBackColor = true;
+            // 
+            // btnQuaTrang
+            // 
+            this.btnQuaTrang.Location = new System.Drawing.Point(246, 506);
+            this.btnQuaTrang.Name = "btnQuaTrang";
+            this.btnQuaTrang.Size = new System.Drawing.Size(75, 33);
+            this.btnQuaTrang.TabIndex = 6;
+            this.btnQuaTrang.Text = "Qua Trang";
+            this.btnQuaTrang.UseVisualStyleBackColor = true;
+            // 
+            // btnQuayLai
+            // 
+            this.btnQuayLai.Location = new System.Drawing.Point(634, 503);
+            this.btnQuayLai.Name = "btnQuayLai";
+            this.btnQuayLai.Size = new System.Drawing.Size(75, 33);
+            this.btnQuayLai.TabIndex = 7;
+            this.btnQuayLai.Text = "Quay Lại";
+            this.btnQuayLai.UseVisualStyleBackColor = true;
+            // 
+            // txtSoTrang
+            // 
+            this.txtSoTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoTrang.Location = new System.Drawing.Point(429, 505);
+            this.txtSoTrang.Name = "txtSoTrang";
+            this.txtSoTrang.ReadOnly = true;
+            this.txtSoTrang.Size = new System.Drawing.Size(87, 26);
+            this.txtSoTrang.TabIndex = 8;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.lblTrangThai);
+            this.panel20.Controls.Add(this.textBox4);
+            this.panel20.Location = new System.Drawing.Point(0, 187);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(378, 40);
+            this.panel20.TabIndex = 12;
+            // 
+            // lblTrangThai
+            // 
+            this.lblTrangThai.AutoSize = true;
+            this.lblTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangThai.Location = new System.Drawing.Point(3, 14);
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(91, 16);
+            this.lblTrangThai.TabIndex = 6;
+            this.lblTrangThai.Text = "Trạng Thái :";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(104, 5);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(271, 30);
+            this.textBox4.TabIndex = 4;
+            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -791,6 +880,7 @@
             this.ClientSize = new System.Drawing.Size(956, 571);
             this.Controls.Add(this.tabAdmin);
             this.Name = "FrmAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.tabTaiKhoan.ResumeLayout(false);
@@ -828,9 +918,12 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDoUong)).EndInit();
             this.tabDoanhThu.ResumeLayout(false);
+            this.tabDoanhThu.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhThu)).EndInit();
             this.tabAdmin.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -901,5 +994,13 @@
         private System.Windows.Forms.DateTimePicker dtpkTuNgay;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TabControl tabAdmin;
+        private System.Windows.Forms.Button btnDau;
+        private System.Windows.Forms.Button btnQuayLai;
+        private System.Windows.Forms.Button btnQuaTrang;
+        private System.Windows.Forms.Button btnCuoi;
+        private System.Windows.Forms.TextBox txtSoTrang;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Label lblTrangThai;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
