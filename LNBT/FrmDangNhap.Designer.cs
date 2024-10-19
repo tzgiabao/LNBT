@@ -37,6 +37,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linklabelQuenMK = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +46,7 @@
             // 
             this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.Menu;
             this.txtTenDangNhap.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(49, 47);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(50, 35);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(334, 33);
             this.txtTenDangNhap.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             this.txtMatKhau.BackColor = System.Drawing.SystemColors.Menu;
             this.txtMatKhau.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(49, 121);
+            this.txtMatKhau.Location = new System.Drawing.Point(50, 97);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(334, 33);
             this.txtMatKhau.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             this.lblTenDangNhap.AutoSize = true;
             this.lblTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenDangNhap.Location = new System.Drawing.Point(58, 31);
+            this.lblTenDangNhap.Location = new System.Drawing.Point(59, 19);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
             this.lblTenDangNhap.Size = new System.Drawing.Size(115, 16);
             this.lblTenDangNhap.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             this.lblMatKhau.AutoSize = true;
             this.lblMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatKhau.Location = new System.Drawing.Point(58, 105);
+            this.lblMatKhau.Location = new System.Drawing.Point(59, 81);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(70, 16);
             this.lblMatKhau.TabIndex = 3;
@@ -92,6 +93,7 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(279, 187);
             this.btnThoat.Name = "btnThoat";
@@ -103,6 +105,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.linklabelQuenMK);
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.btnDangNhap);
             this.panel1.Controls.Add(this.lblMatKhau);
@@ -122,6 +125,16 @@
             this.pictureBox1.Size = new System.Drawing.Size(336, 139);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // linklabelQuenMK
+            // 
+            this.linklabelQuenMK.AutoSize = true;
+            this.linklabelQuenMK.Location = new System.Drawing.Point(292, 140);
+            this.linklabelQuenMK.Name = "linklabelQuenMK";
+            this.linklabelQuenMK.Size = new System.Drawing.Size(82, 13);
+            this.linklabelQuenMK.TabIndex = 6;
+            this.linklabelQuenMK.TabStop = true;
+            this.linklabelQuenMK.Text = "Quên Mật Khẩu";
             // 
             // FrmDangNhap
             // 
@@ -155,6 +168,7 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linklabelQuenMK;
     }
 }
 
