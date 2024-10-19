@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LNBT.ViewModel
 {
-    internal class ChiTietDonHangViewModel
+    internal class ChiTietDonHang
     {
         public int MaChiTietDonHang { get; set; }
 
