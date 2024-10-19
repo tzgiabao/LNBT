@@ -20,7 +20,7 @@ namespace LNBT.ViewModel
         public DateTime? NgayBatDau { get; set; }
         public string TrangThai { get; set; }
         public virtual ICollection<DonHang> DonHangs { get; set; }
+
+
     }
-
 }
-
