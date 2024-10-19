@@ -18,6 +18,7 @@ namespace LNBT.Model
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
+        public virtual DbSet<TKNhanVien> TKNhanViens { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -108,6 +109,18 @@ namespace LNBT.Model
             modelBuilder.Entity<SanPham>()
                 .Property(e => e.KhuyenMai)
                 .HasPrecision(5, 2);
+
+            modelBuilder.Entity<TKNhanVien>()
+                .Property(e => e.Username)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<TKNhanVien>()
+                .Property(e => e.PasswordHash)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<TKNhanVien>()
+                .Property(e => e.Role)
+                .IsUnicode(false);
         }
     }
 }
