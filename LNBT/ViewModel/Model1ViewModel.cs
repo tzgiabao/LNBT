@@ -16,6 +16,6 @@ namespace LNBT.ViewModel
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
-
+        public virtual DbSet<TKNhanVien> TKNhanViens { get; set; }
     }
 }

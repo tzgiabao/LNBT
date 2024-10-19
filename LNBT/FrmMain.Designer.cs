@@ -48,15 +48,11 @@
             this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongTinCaNhanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DangXuatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nmGiamGia = new System.Windows.Forms.NumericUpDown();
-            this.btnGiamGia = new System.Windows.Forms.Button();
-            this.txtTong = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmSoLuongMon)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmGiamGia)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -124,9 +120,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txtTong);
-            this.panel3.Controls.Add(this.btnGiamGia);
-            this.panel3.Controls.Add(this.nmGiamGia);
             this.panel3.Controls.Add(this.txbThanhTien);
             this.panel3.Controls.Add(this.btnThanhToan);
             this.panel3.Location = new System.Drawing.Point(12, 435);
@@ -138,10 +131,10 @@
             // 
             this.txbThanhTien.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txbThanhTien.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txbThanhTien.Location = new System.Drawing.Point(240, 14);
+            this.txbThanhTien.Location = new System.Drawing.Point(279, 14);
             this.txbThanhTien.Name = "txbThanhTien";
             this.txbThanhTien.ReadOnly = true;
-            this.txbThanhTien.Size = new System.Drawing.Size(237, 25);
+            this.txbThanhTien.Size = new System.Drawing.Size(218, 25);
             this.txbThanhTien.TabIndex = 7;
             this.txbThanhTien.Text = "0";
             this.txbThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -231,7 +224,7 @@
             // ThongTinCaNhanToolStripMenuItem
             // 
             this.ThongTinCaNhanToolStripMenuItem.Name = "ThongTinCaNhanToolStripMenuItem";
-            this.ThongTinCaNhanToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.ThongTinCaNhanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ThongTinCaNhanToolStripMenuItem.Text = "Thông tin cá nhân";
             this.ThongTinCaNhanToolStripMenuItem.Click += new System.EventHandler(this.ThongTinCaNhanToolStripMenuItem_Click);
             // 
@@ -241,43 +234,6 @@
             this.DangXuatToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.DangXuatToolStripMenuItem.Text = "Đăng xuất";
             this.DangXuatToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
-            // 
-            // nmGiamGia
-            // 
-            this.nmGiamGia.Location = new System.Drawing.Point(3, 29);
-            this.nmGiamGia.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.nmGiamGia.Name = "nmGiamGia";
-            this.nmGiamGia.Size = new System.Drawing.Size(147, 20);
-            this.nmGiamGia.TabIndex = 8;
-            this.nmGiamGia.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // btnGiamGia
-            // 
-            this.btnGiamGia.Location = new System.Drawing.Point(3, 3);
-            this.btnGiamGia.Name = "btnGiamGia";
-            this.btnGiamGia.Size = new System.Drawing.Size(147, 23);
-            this.btnGiamGia.TabIndex = 9;
-            this.btnGiamGia.Text = "Giảm Giá";
-            this.btnGiamGia.UseVisualStyleBackColor = true;
-            // 
-            // txtTong
-            // 
-            this.txtTong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTong.Location = new System.Drawing.Point(178, 13);
-            this.txtTong.Name = "txtTong";
-            this.txtTong.ReadOnly = true;
-            this.txtTong.Size = new System.Drawing.Size(56, 26);
-            this.txtTong.TabIndex = 10;
-            this.txtTong.Text = "Tổng :";
-            this.txtTong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmMain
             // 
@@ -299,7 +255,6 @@
             this.panel2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmGiamGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,8 +281,5 @@
         private System.Windows.Forms.ToolStripMenuItem DangXuatToolStripMenuItem;
         private System.Windows.Forms.Button btnXoaMon;
         private System.Windows.Forms.Button btnThemMon;
-        private System.Windows.Forms.TextBox txtTong;
-        private System.Windows.Forms.Button btnGiamGia;
-        private System.Windows.Forms.NumericUpDown nmGiamGia;
     }
 }
